@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import dash
 # from dash import dash_table
 from dash import dcc
@@ -207,8 +209,9 @@ def update_context(params):
     for idx, p in enumerate(params):
         if p == "agréments":
             context += (
-                "Nombre d'entités ayant l'agrément nécessaire pour proposer"
-                " des jeux d'argent à date, pour chaque type."
+                "Nombre d'entités ayant l'[agrément ANJ]"
+                "(https://anj.fr/offre-de-jeu-et-marche/operateurs-agrees),"
+                " pour chaque type."
             )
         elif p == "Nombre CJA":
             context += (
