@@ -20,7 +20,7 @@ app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 print('Loading data')
 df = pd.read_csv(
     'https://static.data.gouv.fr/resources/donnees-sur-le-marche-des-jeux-en-ligne-paris-sportifs-hippiques-et-poker-de-2010-a-2022/20230921-134726/anj-donnees-marche-jeux-en-ligne-20102022.csv',
-    encoding="ansi",
+    encoding="cp1252",
     sep=";"
 )
 df.columns = [c.replace('Au ', '') for c in df.columns]
